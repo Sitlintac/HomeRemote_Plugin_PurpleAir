@@ -22,7 +22,7 @@ Purple Air integration for Home Remote; allows read-only access to one private s
 - **Pm10**: Sensor's calculation of PM10.0 (ug/m3)
 - **Pm2_5**: Sensor's calculation of PM2.5 (ug/m3) using PurpleAir's correction
 - **Pm2_5cf1**: Sensor's calculation of PM2.5 (ug/m3) without correction
-- **Pm2_5_10mminute**: Sensor's calculation of average PM2.5 over 10 minutes
+- **Pm2_5_10minute**: Sensor's calculation of average PM2.5 over 10 minutes
 - **Pm2_5_30minute**: Sensor's calculation of average PM2.5 over 30 minutes
 - **Pm2_5_60minute**: Sensor's calculation of average PM2.5 over 60 minutes
 - **Pm2_5_6hour**: Sensor's calculation of average PM2.5 over 6 hours
