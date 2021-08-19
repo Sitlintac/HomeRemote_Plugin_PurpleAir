@@ -41,6 +41,7 @@ function onPoll() {
 function onSynchronizeDevices() {
     var aqiSensor = new Device();
     aqiSensor.Id = "1";
+    aqiSensor.Name = "PurpleAirSensor";
     aqiSensor.DisplayName = "PurpleAirSensor";
     aqiSensor.Capabilities = ["AirQualitySensor", "PressureMeasurement", "RelativeHumidityMeasurement", "TemperatureMeasurement"];
     aqiSensor.Attributes = ["SensorName", "Latitude", "Longitude", "Altitude", "Pm1", "Pm2_5", "Pm2_5cf1", "Pm10", "Pm2_5_10minute", "Pm2_5_30minute", "Pm2_5_60minute", "Pm2_5_6hour", "Pm2_5_24hour", "Pm2_5_1week", "UsAqi", "UsEpaAqi", "UsAqiDescription", "UsAqiMessage"];
