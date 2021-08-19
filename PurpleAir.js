@@ -6,19 +6,20 @@ plugin.OnPoll = onPoll;
 plugin.OnSynchronizeDevices = onSynchronizeDevices;
 plugin.PollingInterval = 300000;
 plugin.DefaultSettings = {
-    "APIkey": "3F1EF34E-0100-11EC-BAD6-42010A800017", "SensorID": "", "ReadKey": "", "US_EPA_Correction": "true"
+    "SensorID": "", "ReadKey": "", "US_EPA_Correction": "true"
 };
 
 var http = new HTTPClient();
 var url;
 var usEpaCorrection;
+const apiKey = "3F1EF34E-0100-11EC-BAD6-42010A800017";
 
 function onChangeRequest(device, attribute, value) {
 }
 
 function onConnect() {
     
-    url = "https://api.purpleair.com/v1/sensors/" + plugin.Settings["SensorID"] + "?api_key=" + plugin.Settings["APIkey"];
+    url = "https://api.purpleair.com/v1/sensors/" + plugin.Settings["SensorID"] + "?api_key=" + apiKey;
     if (plugin.Settings["ReadKey"] != "") {
         url = url + "?read_key=" + pluginSettings["ReadKey"];
     }
